@@ -1,0 +1,22 @@
+﻿@model tarea1.Models.Persona
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="jumbotron">
+@using (Html.BeginForm())
+{
+    @Html.Label(Model.Saludo)
+    <br/>
+     @Html.Label(Model.Nombre)
+    <br/>
+    <br/>
+ @Html.TextBoxFor(persona => persona.Nombre)
+   <br/>
+   <input type="submit" name="submit"/>
+}
+
+</div>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
